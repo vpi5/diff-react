@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "transform-class-properties",
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "LikeReact.createElement"
+      }
+    ]
+  ]
+}
