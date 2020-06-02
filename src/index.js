@@ -22,6 +22,7 @@ class App extends Component{
     }
 
     componentDidMount() {
+        this.divDom.style = 'color:red;';
         setTimeout(() => {
             this.setState({
                 name : {
@@ -43,7 +44,7 @@ class App extends Component{
         let {name} = this.state;
         return(
             <div onClick={this.handle_click}>
-                <div>
+                <div id={'one'} ref={dom => this.divDom = dom}>
                     {name.a}
                 </div>
                 <div>

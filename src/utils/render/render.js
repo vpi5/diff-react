@@ -71,6 +71,11 @@ Render.prototype.setProp = function (dom, attr, value) {
     if (attr === 'className') {
         return dom.setAttribute('class', value);
     }
+    // ref 的处理
+    if(attr === 'ref' && typeof value === 'function'){
+        value(dom);
+        return;
+    }
     // 处理事件
     if (/on\w+/.test(attr)) {
         attr = attr.toLowerCase();

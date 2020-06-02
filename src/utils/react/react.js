@@ -53,14 +53,14 @@ class Component {
             // 加载前 调用 WillMount 周期
             instance.componentWillMount();
 
-            // 调用 DidMount 周期
-            instance.componentDidMount();
-
             // 存储 parent 信息
             instance.parent = parent;
 
             // 完成第一次渲染
             Render.render({ dom : parent, view : instance.render() });
+
+            // 调用 DidMount 周期
+            instance.componentDidMount();
             return;
         }
         // 完成 通过 state 更新的 render
