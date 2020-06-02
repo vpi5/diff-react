@@ -3,7 +3,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 const createElement = (type, props, ...children) => {
-    if (props === null) props = {};
     return { type, props, children };
 };
 

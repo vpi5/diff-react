@@ -23,8 +23,8 @@
     "babel-preset-es2015-node5": "^1.2.0",
     "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "6.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "copy-webpack-plugin" : "6.0.1",
     "webpack": "4.41.2",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "3.9.0"
